@@ -1,0 +1,134 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: url('bg-desktop.svg') no-repeat center center/cover;
+  background-color: hsl(257, 40%, 49%);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+header {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 2rem;
+}
+
+header img {
+  width: 200px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+}
+
+.illustration img {
+  width: 100%;
+  max-width: 700px;
+}
+
+.content {
+  max-width: 500px;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+button {
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  border: none;
+  padding: 1rem 4rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.social-icons a:hover {
+  color: hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  body {
+    background: url('bg-mobile.svg') no-repeat center center/cover;
+    background-color: hsl(257, 40%, 49%);
+    text-align: center;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
